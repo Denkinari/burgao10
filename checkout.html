@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Pedido - Burgão 10</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/checkout.css">
+
+  <!-- Google Fonts from your CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Akatab&family=Beth+Ellen&family=Caveat+Brush&family=Dai+Banna+SIL&family=Passion+One&family=Rethink+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html"><img src="./assets/svgs/logo.svg" alt="Logo Burgão 10"></a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="cardapio.html" class="active">CARDÁPIO</a>
+    </nav>
+    <button class="hamburger-menu" id="hamburger-menu">
+      <span class="hamburger-menu__bar"></span>
+      <span class="hamburger-menu__bar"></span>
+      <span class="hamburger-menu__bar"></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ===== ORANGE BANNER ===== -->
+    <div class="page-banner">
+      <h1>FINAL REQUEST</h1>
+    </div>
+
+    <!-- ===== ORDER SUMMARY CONTAINER ===== -->
+    <div class="checkout-container">
+      <div class="checkout-top-bar">
+        <a href="cardapio.html" class="return-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="currentColor" />
+          </svg>
+          RETURN
+        </a>
+        <p class="checkout-total-text" id="checkout-total">TOTAL: R$ 0.00</p>
+      </div>
+
+      <ul class="checkout-list" id="checkout-list">
+        <!-- Checkout items will be injected here by JavaScript -->
+        <li class="checkout-empty-message">Seu pedido está vazio. <a href="cardapio.html">Voltar ao cardápio</a>.</li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

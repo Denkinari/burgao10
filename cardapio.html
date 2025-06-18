@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio - Your Restaurant</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cardapio.css">
+  <!-- Google Fonts from your CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Akatab&family=Beth+Ellen&family=Caveat+Brush&family=Dai+Banna+SIL&family=Passion+One&family=Rethink+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html"><img src="./assets/svgs/logo.svg" alt="Logo Burgão 10"></a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="cardapio.html" class="active">CARDÁPIO</a>
+    </nav>
+    <button class="hamburger-menu" id="hamburger-menu">
+      <span class="hamburger-menu__bar"></span>
+      <span class="hamburger-menu__bar"></span>
+      <span class="hamburger-menu__bar"></span>
+    </button>
+  </header>
+
+  <main class="container">
+    <!-- ===== PAGE TITLE ===== -->
+    <div class="page-title-container">
+      <h1 class="page-title">MENU</h1>
+      <p class="page-subtitle">Entregas e pedidos feito direto da mesa feitas somente em:</p>
+      <p><a href="https://pedido.anota.ai/loja/burgao-10?f=msa">Burgão 10 - Anota AI</a></p>
+    </div>
+
+    <!-- ===== BURGERS SECTION ===== -->
+    <section id="burgers">
+      <h2 class="section-title"><span>|</span>Hambúrgueres</h2>
+      <article class="menu-item" data-id="b1" data-name="Burgão 10" data-price="10.00">
+        <img src="./assets/menu/hamburguer-1.png" alt="Burgão 10" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Burgão 10</h3>
+          <p class="item-description">Pão brioche, blend de carnes, queijo cheddar, molho e alface.</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="sauce-b1">Molho:</label>
+              <select id="sauce-b1" class="item-sauce">
+                <option value="Maionese">Maionese</option>
+                <option value="Ketchup">Ketchup</option>
+                <option value="Mostarda">Mostarda</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <!-- ===== CORRECTED EXTRA OPTIONS (Collapsible) ===== -->
+              <div class="extra-options-container collapsed"> <!-- Start as collapsed -->
+                <div class="extra-options-header">
+                  <h4>Adicionais</h4>
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M7 10L12 15L17 10" fill="var(--primary-color)" />
+                  </svg>
+                </div>
+                <div class="extra-options-content">
+                  <ul class="extra-options-list">
+                    <!-- Extra Option 1 -->
+                    <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
+                      <img src="./assets/menu/molho.png" alt="Molho de Ervas" class="extra-image">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Ervas</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 2 -->
+                    <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
+                      <img src="./assets/menu/molho.png" alt="Molho de Alho" class="extra-image">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Alho</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Add more sauces here -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="option-group">
+              <label for="qty-b1">Qtd.:</label>
+              <select id="qty-b1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 20.00</p>
+          <button class="btn-add">ADD</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-id="b2" data-name="Burgão 10 Duplo" data-price="17.99">
+        <img src="./assets/menu/hamburguer-2.png" alt="Burgão 10 Duplo" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Burgão 10 Duplo</h3>
+          <p class="item-description">Pão brioche, 2 blends de carnes, 2 queijos cheddar, molho e alface.</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="sauce-b1">Molho:</label>
+              <select id="sauce-b1" class="item-sauce">
+                <option value="Maionese">Maionese</option>
+                <option value="Ketchup">Ketchup</option>
+                <option value="Mostarda">Mostarda</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <!-- ===== CORRECTED EXTRA OPTIONS (Collapsible) ===== -->
+              <div class="extra-options-container collapsed"> <!-- Start as collapsed -->
+                <div class="extra-options-header">
+                  <h4>Adicionais</h4>
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M7 10L12 15L17 10" fill="var(--primary-color)" />
+                  </svg>
+                </div>
+                <div class="extra-options-content">
+                  <ul class="extra-options-list">
+                    <!-- Extra Option 1 -->
+                    <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
+                      <img src="./assets/menu/molho.png" alt="Molho de Ervas" class="extra-image">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Ervas</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 2 -->
+                    <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
+                      <img src="./assets/menu/molho.png" alt="Molho de Alho" class="extra-image">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Alho</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Add more sauces here -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="option-group">
+              <label for="qty-b1">Qtd.:</label>
+              <select id="qty-b1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 20.00</p>
+          <button class="btn-add">ADD</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-id="b3" data-name="Burgão 10 Triplo" data-price="23.99">
+        <img src="./assets/menu/hamburguer-3.png" alt="Burgão 10 Triplo" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Burgão 10 Duplo</h3>
+          <p class="item-description">Pão brioche, 3 blends de carnes, 3 queijos cheddar, molho e alface.</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="sauce-b1">Molho:</label>
+              <select id="sauce-b1" class="item-sauce">
+                <option value="Maionese">Maionese</option>
+                <option value="Ketchup">Ketchup</option>
+                <option value="Mostarda">Mostarda</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <!-- ===== CORRECTED EXTRA OPTIONS (Collapsible) ===== -->
+              <div class="extra-options-container collapsed"> <!-- Start as collapsed -->
+                <div class="extra-options-header">
+                  <h4>Adicionais</h4>
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M7 10L12 15L17 10" fill="var(--primary-color)" />
+                  </svg>
+                </div>
+                <div class="extra-options-content">
+                  <ul class="extra-options-list">
+                    <!-- Extra Option 1 -->
+                    <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
+                      <img src="./assets/menu/molho.png" alt="Molho de Ervas" class="extra-image">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Ervas</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 2 -->
+                    <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
+                      <img src="./assets/menu/molho.png" alt="Molho de Alho" class="extra-image">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Alho</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Add more sauces here -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="option-group">
+              <label for="qty-b1">Qtd.:</label>
+              <select id="qty-b1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 20.00</p>
+          <button class="btn-add">ADD</button>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ===== DRINKS SECTION ===== -->
+    <section id="drinks">
+      <h2 class="section-title"><span>|</span>LOREM (Drinks)</h2>
+      <!-- Drink Item 1 -->
+      <article class="menu-item" data-id="d1" data-name="Refrigerante" data-price="5.00">
+        <img src="assets/drinks.jpg" alt="Refrigerantes" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">LOREM</h3>
+          <p class="item-description">Lorem, Lorem, Lorem, Lorem, Lorem</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="type-d1">Type:</label>
+              <select id="type-d1" class="item-type">
+                <option value="Coca-Cola">Coca-Cola</option>
+                <option value="Guaraná">Guaraná</option>
+                <option value="Sprite">Sprite</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="qty-d1">Qtd.:</label>
+              <select id="qty-d1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 5.00</p>
+          <button class="btn-add">ADICIONAR</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== CART SECTION ===== -->
+    <section id="cart-section"> <!-- <<< ADD THIS WRAPPING SECTION -->
+
+      <div class="cart-header">
+        <h2 class="section-title">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 10L12 15L17 10" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          Seu pedido Final
+        </h2>
+        <div class="cart-header-right">
+          <p id="cart-total-price">R$ 0.00</p>
+          <button id="btn-clear-cart" class="btn-clear-cart hidden">Limpar</button>
+        </div>
+      </div>
+
+      <div id="cart-content" class="cart-content">
+        <ul id="cart-items-list">
+          <li class="cart-empty-message">Seu carrinho está vazio.</li>
+        </ul>
+        <div class="observation-group">
+          <label for="cart-observation">Observação:</label> <!-- Changed for="obs-b1" -->
+          <textarea id="cart-observation" class="item-observation" placeholder="Ex.: Tirar cebola, ovo, etc."></textarea>
+        </div>
+        <a href="checkout.html" id="btn-continue" class="btn-continue">CONTINUE</a>
+      </div>
+
+    </section> <!-- <<< THE CLOSING TAG NOW CORRECTLY WRAPS THE WHOLE SECTION -->
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

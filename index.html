@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burgão 10 - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;700&family=Beth+Ellen&family=Caveat+Brush&family=Dai+Banna+SIL:wght@400;700&family=Passion+One:wght@400;700;900&family=Rethink+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
+
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html"><img src="./assets/svgs/logo.svg" alt="Logo Burgão 10"></a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">HOME</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="cardapio.html">CARDÁPIO</a>
+    </nav>
+    <button class="hamburger-menu" id="hamburger-menu">
+      <span class="hamburger-menu__bar"></span>
+      <span class="hamburger-menu__bar"></span>
+      <span class="hamburger-menu__bar"></span>
+    </button>
+  </header>
+
+  <main class="hero-section">
+    <div class="hero-content">
+      <h2 class="hero-subtitle-top">Afim de um lanche?</h2>
+      <h1 class="hero-title">Conheça a lanchonete feita de família para família</h1>
+      <div class="image-placeholder">
+        <img src="./assets/landing/hamburguer-landing/hamburguer/hamburguer.png" alt="">
+      </div>
+    </div>
+    <a href="#about-section" class="scroll-indicator">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </a>
+  </main>
+
+  <section id="about-section" class="about-section">
+    <div class="container">
+      <div class="about-section-container">
+        <img class="about-title-logo" src="./assets/svgs/logo-alt-black.svg"></img>
+        <p class="about-title-small">Hamburgueria Artesanal</p>
+        <p class="about-text">
+          Atendendo em Ceilândia, o Burgão 10 serve hambúrgueres artesanais feitos 100% na brasa 🔥 com ingredientes selecionados a dedo. Em um ambiente familiar e sob altos padrões de higiene, cada lanche é preparado com atenção aos detalhes — do blend de carnes aos molhos exclusivos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="container">
+      <div class="video-placeholder">
+        <span>isso será um video</span>
+      </div>
+      <h3 class="video-title">Descubra o Burgão 10 em ação</h3>
+      <p class="video-text">
+        Assista ao vídeo acima para conhecer nosso espaço, acompanhar nosso processo de produção e sentir a paixão que dedicamos a cada hambúrguer. Veja como escolhemos os melhores insumos e montamos lanches que conquistam famílias e amigos.
+      </p>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <h3 class="gallery-main-title">Muito mais que um lanche gostoso!</h3>
+      <p class="gallery-main-subtitle">Valorizamos sua experiência e garantimos qualidade em tudo o que fazemos.</p>
+      <div class="gallery-container" id="gallery-container">
+        <div class="gallery-card active">
+          <div class="gallery-card__bg-image"><img src="./assets/landing/carrossel/woman-cooking.png" alt=""></div>
+          <div class="gallery-card__content">
+            <h4 class="gallery-card__title">Agilidade no atendimento ⏰</h4>
+            <p class="gallery-card__text">Atendemos no menor tempo possível, sem comprometer a qualidade.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-card__bg-image"><img src="./assets/landing/carrossel/guy-cooking.png" alt=""></div>
+          <div class="gallery-card__content">
+            <h4 class="gallery-card__title">Ambiente limpo e higiênico 🧴</h4>
+            <p class="gallery-card__text">Trabalhamos com responsabilidade, seguindo padrões rigorosos de higiene.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-card__bg-image"><img src="./assets/landing/carrossel/hamburguers.png" alt=""></div>
+          <div class="gallery-card__content">
+            <h4 class="gallery-card__title">Ingredientes Selecionados 🥩</h4>
+            <p class="gallery-card__text">Produtos escolhidos a dedos para garantir o melhor sabor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-container">
+      <div class="cta-text-content">
+        <h3 class="cta-title">LOREM IPSUM DOLOR SIT AMET.</h3>
+        <p class="cta-subtitle">O Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="cta-button">VER MAIS DETALHES</a>
+      </div>
+      <div class="cta-image-content">
+        <div class="cta-price-badge">
+          <p>Por apenas</p>
+          <span>R$20</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location-section">
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.996122650577!2d-47.93163618841449!3d-15.80343362483505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b2176426729%3A0x1944f1958666552a!2sCongresso%20Nacional!5e0!3m2!1spt-BR!2sbr!4v1686440150392!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="location-text-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. ✍️</span></p>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column footer-logo">
+        <a href="#">Logo</a>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>CONTATO</h4>
+        <p>+55 61 99999-9999</p>
+        <p>contato@gmail.com</p>
+        <p>Rua X - Cidade X - 00000-000</p>
+        <p>Brasília - DF, 72241-803</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919A48.426 48.426 0 0112 2.163zm0 1.441c-3.116 0-3.483.01-4.706.067-2.61.12-3.834 1.34-3.954 3.954-.057 1.222-.067 1.588-.067 4.706s.01 3.483.067 4.706c.12 2.61 1.344 3.834 3.954 3.954 1.222.057 1.588.067 4.706.067s3.483-.01 4.706-.067c2.61-.12 3.834-1.344 3.954-3.954.057-1.222.067-1.588.067-4.706s-.01-3.483-.067-4.706c-.12-2.61-1.344-3.834-3.954-3.954A46.947 46.947 0 0012 3.604zm0 4.238a4.158 4.158 0 100 8.316 4.158 4.158 0 000-8.316zM12 14a2 2 0 110-4 2 2 0 010 4zm6.406-7.18a.96.96 0 100-1.92.96.96 0 000 1.92z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-column footer-pages">
+        <h4>PÁGINAS</h4>
+        <a href="index.html">HOME</a>
+        <a href="sobre.html">SOBRE</a>
+        <a href="cardapio.html">CARDÁPIO</a>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <p>&copy; 2025 Burgão 10. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
