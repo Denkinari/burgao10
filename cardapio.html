@@ -10,16 +10,16 @@
   <!-- Google Fonts from your CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Akatab&family=Beth+Ellen&family=Caveat+Brush&family=Dai+Banna+SIL&family=Passion+One&family=Rethink+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;700&family=Beth+Ellen&family=Caveat+Brush&family=Dai+Banna+SIL:wght@400;700&family=Passion+One:wght@400;700;900&Londrina+Solid:wght@300;500;700&family=Rethink+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <div class="logo">
-      <a href="index.html"><img src="./assets/svgs/logo.svg" alt="Logo Burgão 10"></a>
+      <a href="home.html"><img src="./assets/svgs/logo.svg" alt="Logo Burgão 10"></a>
     </div>
     <nav class="nav-links">
-      <a href="index.html">HOME</a>
+      <a href="home.html">HOME</a>
       <a href="sobre.html">SOBRE</a>
       <a href="cardapio.html" class="active">CARDÁPIO</a>
     </nav>
@@ -34,8 +34,9 @@
     <!-- ===== PAGE TITLE ===== -->
     <div class="page-title-container">
       <h1 class="page-title">MENU</h1>
-      <p class="page-subtitle">Entregas e pedidos feito direto da mesa feitas somente em:</p>
-      <p><a href="https://pedido.anota.ai/loja/burgao-10?f=msa">Burgão 10 - Anota AI</a></p>
+      <p class="page-subtitle-waring">ATENÇÃO!</p>
+      <p class="page-subtitle">Para entregas e/ou pedidos diretamente da mesa somente em:</p>
+      <p class="anota-ai-link"><a href="https://pedido.anota.ai/loja/burgao-10?f=msa">Burgão 10 - Anota AI</a></p>
     </div>
 
     <!-- ===== BURGERS SECTION ===== -->
@@ -50,9 +51,13 @@
             <div class="option-group">
               <label for="sauce-b1">Molho:</label>
               <select id="sauce-b1" class="item-sauce">
-                <option value="Maionese">Maionese</option>
-                <option value="Ketchup">Ketchup</option>
-                <option value="Mostarda">Mostarda</option>
+                <option value="Molho de Ervas">Molho de Ervas</option>
+                <option value="Molho de Alho">Molho de Alho</option>
+                <option value="Molho de Bacon">Molho de Bacon</option>
+                <option value="Molho de Mostarda e Mel">Molho de Mostarda e Mel</option>
+                <option value="Molho de Barbecue">Molho de Barbecue</option>
+                <option value="Sem Molho">Sem Molho</option>
+
               </select>
             </div>
             <div class="option-group">
@@ -68,7 +73,6 @@
                   <ul class="extra-options-list">
                     <!-- Extra Option 1 -->
                     <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
-                      <img src="./assets/menu/molho.png" alt="Molho de Ervas" class="extra-image">
                       <div class="extra-details">
                         <p class="extra-name">Adicione Molho de Ervas</p>
                         <p class="extra-price">R$ 1,00</p>
@@ -81,7 +85,6 @@
                     </li>
                     <!-- Extra Option 2 -->
                     <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
-                      <img src="./assets/menu/molho.png" alt="Molho de Alho" class="extra-image">
                       <div class="extra-details">
                         <p class="extra-name">Adicione Molho de Alho</p>
                         <p class="extra-price">R$ 1,00</p>
@@ -92,7 +95,54 @@
                         <button class="btn-extra-plus">+</button>
                       </div>
                     </li>
-                    <!-- Add more sauces here -->
+                    <!-- Extra Option 3 -->
+                    <li class="extra-option-item" data-name="Molho de Bacon" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Bacon</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 4 -->
+                    <li class="extra-option-item" data-name="Molho de Mostarda e Mel" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Mostarda e Mel</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 5 -->
+                    <li class="extra-option-item" data-name="Molho de Barbecue" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Barbecue</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 6 -->
+                    <li class="extra-option-item" data-name="Bacon" data-price="3.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Bacon</p>
+                        <p class="extra-price">R$ 3,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -114,7 +164,7 @@
           </div>
         </div>
         <div class="item-action">
-          <p class="item-price">R$ 20.00</p>
+          <p class="item-price">R$ 10.00</p>
           <button class="btn-add">ADD</button>
         </div>
       </article>
@@ -128,9 +178,12 @@
             <div class="option-group">
               <label for="sauce-b1">Molho:</label>
               <select id="sauce-b1" class="item-sauce">
-                <option value="Maionese">Maionese</option>
-                <option value="Ketchup">Ketchup</option>
-                <option value="Mostarda">Mostarda</option>
+                <option value="Molho de Ervas">Molho de Ervas</option>
+                <option value="Molho de Alho">Molho de Alho</option>
+                <option value="Molho de Bacon">Molho de Bacon</option>
+                <option value="Molho de Mostarda e Mel">Molho de Mostarda e Mel</option>
+                <option value="Molho de Barbecue">Molho de Barbecue</option>
+                <option value="Sem Molho">Sem Molho</option>
               </select>
             </div>
             <div class="option-group">
@@ -146,7 +199,6 @@
                   <ul class="extra-options-list">
                     <!-- Extra Option 1 -->
                     <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
-                      <img src="./assets/menu/molho.png" alt="Molho de Ervas" class="extra-image">
                       <div class="extra-details">
                         <p class="extra-name">Adicione Molho de Ervas</p>
                         <p class="extra-price">R$ 1,00</p>
@@ -159,7 +211,6 @@
                     </li>
                     <!-- Extra Option 2 -->
                     <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
-                      <img src="./assets/menu/molho.png" alt="Molho de Alho" class="extra-image">
                       <div class="extra-details">
                         <p class="extra-name">Adicione Molho de Alho</p>
                         <p class="extra-price">R$ 1,00</p>
@@ -170,7 +221,54 @@
                         <button class="btn-extra-plus">+</button>
                       </div>
                     </li>
-                    <!-- Add more sauces here -->
+                    <!-- Extra Option 3 -->
+                    <li class="extra-option-item" data-name="Molho de Bacon" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Bacon</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 4 -->
+                    <li class="extra-option-item" data-name="Molho de Mostarda e Mel" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Mostarda e Mel</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 5 -->
+                    <li class="extra-option-item" data-name="Molho de Barbecue" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Barbecue</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 6 -->
+                    <li class="extra-option-item" data-name="Bacon" data-price="3.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Bacon</p>
+                        <p class="extra-price">R$ 3,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -192,7 +290,7 @@
           </div>
         </div>
         <div class="item-action">
-          <p class="item-price">R$ 20.00</p>
+          <p class="item-price">R$ 17.99</p>
           <button class="btn-add">ADD</button>
         </div>
       </article>
@@ -200,15 +298,18 @@
       <article class="menu-item" data-id="b3" data-name="Burgão 10 Triplo" data-price="23.99">
         <img src="./assets/menu/hamburguer-3.png" alt="Burgão 10 Triplo" class="item-image">
         <div class="item-details">
-          <h3 class="item-name">Burgão 10 Duplo</h3>
+          <h3 class="item-name">Burgão 10 Triplo</h3>
           <p class="item-description">Pão brioche, 3 blends de carnes, 3 queijos cheddar, molho e alface.</p>
           <div class="item-options">
             <div class="option-group">
               <label for="sauce-b1">Molho:</label>
               <select id="sauce-b1" class="item-sauce">
-                <option value="Maionese">Maionese</option>
-                <option value="Ketchup">Ketchup</option>
-                <option value="Mostarda">Mostarda</option>
+                <option value="Molho de Ervas">Molho de Ervas</option>
+                <option value="Molho de Alho">Molho de Alho</option>
+                <option value="Molho de Bacon">Molho de Bacon</option>
+                <option value="Molho de Mostarda e Mel">Molho de Mostarda e Mel</option>
+                <option value="Molho de Barbecue">Molho de Barbecue</option>
+                <option value="Sem Molho">Sem Molho</option>
               </select>
             </div>
             <div class="option-group">
@@ -224,7 +325,6 @@
                   <ul class="extra-options-list">
                     <!-- Extra Option 1 -->
                     <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
-                      <img src="./assets/menu/molho.png" alt="Molho de Ervas" class="extra-image">
                       <div class="extra-details">
                         <p class="extra-name">Adicione Molho de Ervas</p>
                         <p class="extra-price">R$ 1,00</p>
@@ -237,7 +337,6 @@
                     </li>
                     <!-- Extra Option 2 -->
                     <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
-                      <img src="./assets/menu/molho.png" alt="Molho de Alho" class="extra-image">
                       <div class="extra-details">
                         <p class="extra-name">Adicione Molho de Alho</p>
                         <p class="extra-price">R$ 1,00</p>
@@ -248,7 +347,54 @@
                         <button class="btn-extra-plus">+</button>
                       </div>
                     </li>
-                    <!-- Add more sauces here -->
+                    <!-- Extra Option 3 -->
+                    <li class="extra-option-item" data-name="Molho de Bacon" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Bacon</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 4 -->
+                    <li class="extra-option-item" data-name="Molho de Mostarda e Mel" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Mostarda e Mel</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 5 -->
+                    <li class="extra-option-item" data-name="Molho de Barbecue" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Barbecue</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 6 -->
+                    <li class="extra-option-item" data-name="Bacon" data-price="3.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Bacon</p>
+                        <p class="extra-price">R$ 3,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -270,29 +416,466 @@
           </div>
         </div>
         <div class="item-action">
-          <p class="item-price">R$ 20.00</p>
+          <p class="item-price">R$ 23.99</p>
+          <button class="btn-add">ADD</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== COMBO BURGERS SECTION ===== -->
+    <section id="combo-burgers">
+      <h2 class="section-title"><span>|</span>Combos</h2>
+      <article class="menu-item" data-id="cb1" data-name="Combo Burgão 10" data-price="18.99">
+        <img src="./assets/menu/hamburguer-1.png" alt="Burgão 10" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Combo Burgão 10</h3>
+          <p class="item-description">Lanche com batata e refrigerante lata.</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="sauce-b1">Molho:</label>
+              <select id="sauce-b1" class="item-sauce">
+                <option value="Molho de Ervas">Molho de Ervas</option>
+                <option value="Molho de Alho">Molho de Alho</option>
+                <option value="Molho de Bacon">Molho de Bacon</option>
+                <option value="Molho de Mostarda e Mel">Molho de Mostarda e Mel</option>
+                <option value="Molho de Barbecue">Molho de Barbecue</option>
+                <option value="Sem Molho">Sem Molho</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <!-- ===== CORRECTED EXTRA OPTIONS (Collapsible) ===== -->
+              <div class="extra-options-container collapsed"> <!-- Start as collapsed -->
+                <div class="extra-options-header">
+                  <h4>Adicionais</h4>
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M7 10L12 15L17 10" fill="var(--primary-color)" />
+                  </svg>
+                </div>
+                <div class="extra-options-content">
+                  <ul class="extra-options-list">
+                    <!-- Extra Option 1 -->
+                    <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Ervas</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 2 -->
+                    <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Alho</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 3 -->
+                    <li class="extra-option-item" data-name="Molho de Bacon" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Bacon</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 4 -->
+                    <li class="extra-option-item" data-name="Molho de Mostarda e Mel" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Mostarda e Mel</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 5 -->
+                    <li class="extra-option-item" data-name="Molho de Barbecue" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Barbecue</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 6 -->
+                    <li class="extra-option-item" data-name="Bacon" data-price="3.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Bacon</p>
+                        <p class="extra-price">R$ 3,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="option-group">
+              <label for="type-d1">Opções:</label>
+              <select id="type-d1" class="item-type">
+                <option value="Coca-Cola">Coca-cola 310 ml</option>
+                <option value="Coca-cola Zero">Coca-cola Zero 310 ml</option>
+                <option value="Guaraná Antartica">Guaraná Antartica 350 ml</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="qty-b1">Qtd.:</label>
+              <select id="qty-b1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 18.99</p>
           <button class="btn-add">ADD</button>
         </div>
       </article>
 
+      <article class="menu-item" data-id="cb2" data-name="Combo Burgão 10 Duplo" data-price="23.99">
+        <img src="./assets/menu/hamburguer-1.png" alt="Combo Burgão 10 Duplo" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Combo Burgão 10 Duplo</h3>
+          <p class="item-description">Lanche de 2 carnes, batata e refrigerante lata.</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="sauce-b1">Molho:</label>
+              <select id="sauce-b1" class="item-sauce">
+                <option value="Molho de Ervas">Molho de Ervas</option>
+                <option value="Molho de Alho">Molho de Alho</option>
+                <option value="Molho de Bacon">Molho de Bacon</option>
+                <option value="Molho de Mostarda e Mel">Molho de Mostarda e Mel</option>
+                <option value="Molho de Barbecue">Molho de Barbecue</option>
+                <option value="Sem Molho">Sem Molho</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <!-- ===== CORRECTED EXTRA OPTIONS (Collapsible) ===== -->
+              <div class="extra-options-container collapsed"> <!-- Start as collapsed -->
+                <div class="extra-options-header">
+                  <h4>Adicionais</h4>
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M7 10L12 15L17 10" fill="var(--primary-color)" />
+                  </svg>
+                </div>
+                <div class="extra-options-content">
+                  <ul class="extra-options-list">
+                    <!-- Extra Option 1 -->
+                    <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Ervas</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 2 -->
+                    <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Alho</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 3 -->
+                    <li class="extra-option-item" data-name="Molho de Bacon" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Bacon</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 4 -->
+                    <li class="extra-option-item" data-name="Molho de Mostarda e Mel" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Mostarda e Mel</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 5 -->
+                    <li class="extra-option-item" data-name="Molho de Barbecue" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Barbecue</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 6 -->
+                    <li class="extra-option-item" data-name="Bacon" data-price="3.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Bacon</p>
+                        <p class="extra-price">R$ 3,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="option-group">
+              <label for="type-d1">Opções:</label>
+              <select id="type-d1" class="item-type">
+                <option value="Coca-Cola">Coca-cola 310 ml</option>
+                <option value="Coca-cola Zero">Coca-cola Zero 310 ml</option>
+                <option value="Guaraná Antartica">Guaraná Antartica 350 ml</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="qty-b1">Qtd.:</label>
+              <select id="qty-b1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 23.99</p>
+          <button class="btn-add">ADD</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-id="cb3" data-name="Combo Burgão 10 Triplo" data-price="28.99">
+        <img src="./assets/menu/hamburguer-1.png" alt="Combo Burgão 10 Triplo" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Combo Burgão 10 Triplo</h3>
+          <p class="item-description">Lanche com 3 carnes, batata e refrigerante lata.</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="sauce-b1">Molho:</label>
+              <select id="sauce-b1" class="item-sauce">
+                <option value="Molho de Ervas">Molho de Ervas</option>
+                <option value="Molho de Alho">Molho de Alho</option>
+                <option value="Molho de Bacon">Molho de Bacon</option>
+                <option value="Molho de Mostarda e Mel">Molho de Mostarda e Mel</option>
+                <option value="Molho de Barbecue">Molho de Barbecue</option>
+                <option value="Sem Molho">Sem Molho</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <!-- ===== CORRECTED EXTRA OPTIONS (Collapsible) ===== -->
+              <div class="extra-options-container collapsed"> <!-- Start as collapsed -->
+                <div class="extra-options-header">
+                  <h4>Adicionais</h4>
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M7 10L12 15L17 10" fill="var(--primary-color)" />
+                  </svg>
+                </div>
+                <div class="extra-options-content">
+                  <ul class="extra-options-list">
+                    <!-- Extra Option 1 -->
+                    <li class="extra-option-item" data-name="Molho de Ervas" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Ervas</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 2 -->
+                    <li class="extra-option-item" data-name="Molho de Alho" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Alho</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 3 -->
+                    <li class="extra-option-item" data-name="Molho de Bacon" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Bacon</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 4 -->
+                    <li class="extra-option-item" data-name="Molho de Mostarda e Mel" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Mostarda e Mel</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 5 -->
+                    <li class="extra-option-item" data-name="Molho de Barbecue" data-price="1.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Molho de Barbecue</p>
+                        <p class="extra-price">R$ 1,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                    <!-- Extra Option 6 -->
+                    <li class="extra-option-item" data-name="Bacon" data-price="3.00">
+                      <div class="extra-details">
+                        <p class="extra-name">Adicione Bacon</p>
+                        <p class="extra-price">R$ 3,00</p>
+                      </div>
+                      <div class="quantity-control">
+                        <button class="btn-extra-minus" disabled>-</button>
+                        <span class="extra-quantity">0</span>
+                        <button class="btn-extra-plus">+</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="option-group">
+              <label for="type-d1">Opções:</label>
+              <select id="type-d1" class="item-type">
+                <option value="Coca-Cola">Coca-cola 310 ml</option>
+                <option value="Coca-cola Zero">Coca-cola Zero 310 ml</option>
+                <option value="Guaraná Antartica">Guaraná Antartica 350 ml</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="qty-b1">Qtd.:</label>
+              <select id="qty-b1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 28.99</p>
+          <button class="btn-add">ADD</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== BATATA FRITA SECTION ===== -->
+    <section id="batata">
+      <h2 class="section-title"><span>|</span>Batata Frita</h2>
+      <article class="menu-item" data-id="bf1" data-name="Saquinho de Batata Frita" data-price="5.00">
+        <img src="./assets/menu/french-fries.jpg" alt="Batata Frita" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name"> Saquinho de Batata Frita</h3>
+          <p class="item-description">Saquinho de Batata Frita.</p>
+        </div>
+        <div class="option-group">
+          <label for="qty-b1">Qtd.:</label>
+          <select id="qty-b1" class="item-qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 5.00</p>
+          <button class="btn-add">ADD</button>
+        </div>
+      </article>
     </section>
 
     <!-- ===== DRINKS SECTION ===== -->
     <section id="drinks">
-      <h2 class="section-title"><span>|</span>LOREM (Drinks)</h2>
+      <h2 class="section-title"><span>|</span>Bebidas</h2>
       <!-- Drink Item 1 -->
-      <article class="menu-item" data-id="d1" data-name="Refrigerante" data-price="5.00">
-        <img src="assets/drinks.jpg" alt="Refrigerantes" class="item-image">
+      <article class="menu-item" data-id="d1" data-name="Refrigerante 2Lts" data-price="13.00">
+        <img src="./assets/menu/soda-bottle-2.png" alt="Refrigerantes 2Lts" class="item-image">
         <div class="item-details">
-          <h3 class="item-name">LOREM</h3>
-          <p class="item-description">Lorem, Lorem, Lorem, Lorem, Lorem</p>
+          <h3 class="item-name">Refrigerante 2 Lts</h3>
+          <p class="item-description">Refrigerantes de 2Lts</p>
           <div class="item-options">
             <div class="option-group">
-              <label for="type-d1">Type:</label>
+              <label for="type-d1">Opções:</label>
               <select id="type-d1" class="item-type">
-                <option value="Coca-Cola">Coca-Cola</option>
-                <option value="Guaraná">Guaraná</option>
-                <option value="Sprite">Sprite</option>
+                <option value="Coca-Cola">Coca-cola 2 Lts</option>
+                <option value="Coca-Cola Zero">Coca-cola Zero 2 Lts</option>
+                <option value="Guaraná Artartica">Guaraná Artartica 2 Lts</option>
               </select>
             </div>
             <div class="option-group">
@@ -302,12 +885,104 @@
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 13.00</p>
+          <button class="btn-add">ADICIONAR</button>
+        </div>
+      </article>
+      <article class="menu-item" data-id="d2" data-name="Refrigerante 1,5Lts" data-price="8.00">
+        <img src="./assets/menu/soda-bottles.png" alt="Refrigerantes 1,5 Lts" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Refrigerante 1,5 Lts</h3>
+          <p class="item-description">Refrigerantes de 1,5 Lts</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="type-d1">Opções:</label>
+              <select id="type-d1" class="item-type">
+                <option value="Kuat">Kuat</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="qty-d1">Qtd.:</label>
+              <select id="qty-d1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 8.00</p>
+          <button class="btn-add">ADICIONAR</button>
+        </div>
+      </article>
+      <article class="menu-item" data-id="d3" data-name="Refrigerante Lata" data-price="5.00">
+        <img src="./assets/menu/soda.png" alt="Refrigerantes Lata" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Refrigerante Lata</h3>
+          <p class="item-description">Refrigerantes LAta</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="type-d1">Opções:</label>
+              <select id="type-d1" class="item-type">
+                <option value="Coca-Cola">Coca-cola 310 ml</option>
+                <option value="Coca-cola Zero">Coca-cola Zero 310 ml</option>
+                <option value="Guaraná Antartica">Guaraná Antartica 350 ml</option>
+
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="qty-d1">Qtd.:</label>
+              <select id="qty-d1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
             </div>
           </div>
         </div>
         <div class="item-action">
           <p class="item-price">R$ 5.00</p>
+          <button class="btn-add">ADICIONAR</button>
+        </div>
+      </article>
+      <article class="menu-item" data-id="d4" data-name="Suco Lata" data-price="7.00">
+        <img src="./assets/menu/water.png" alt="Refrigerantes Lata" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Suco Lata</h3>
+          <p class="item-description">Sucoss Lata</p>
+          <div class="item-options">
+            <div class="option-group">
+              <label for="type-d1">Opções:</label>
+              <select id="type-d1" class="item-type">
+                <option value="Néctar del Valle Maracujá">Néctar del Valle Maracujá 290 ml</option>
+                <option value="Néctar del Valle Uva">Néctar del Valle Uva 290 ml</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="qty-d1">Qtd.:</label>
+              <select id="qty-d1" class="item-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="item-action">
+          <p class="item-price">R$ 7.00</p>
           <button class="btn-add">ADICIONAR</button>
         </div>
       </article>
@@ -342,6 +1017,43 @@
 
     </section> <!-- <<< THE CLOSING TAG NOW CORRECTLY WRAPS THE WHOLE SECTION -->
   </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column footer-logo">
+        <a href="#"><img src="./assets/svgs/logo.svg" alt="Logo Burgão 10"></a>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>CONTATO</h4>
+        <p>+55 61 98608-1010</p>
+        <p>burgao10contato@gmail.com</p>
+        <span class="footer-divisor      gap: 24px;"></span>
+        <p>St. P QNP 19 E - Ceilândia</p>
+        <p>Brasília - DF, 72241-803</p>
+        <span class="footer-divisor"></span>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/burgao10oficial/" aria-label="Instagram">
+            <img src="./assets/svgs/social-media/isntagram.svg" alt="Logo Instagram">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="./assets/svgs/social-media/facebook.svg" alt="Logo Facebook">
+          </a>
+          <a href="https://wa.me/+556186081010" aria-label="Whatsapp">
+            <img src="./assets/svgs/social-media/whatsapp.svg" alt="Logo Whatsapp">
+          </a>
+        </div>
+      </div>
+      <div class="footer-column footer-pages">
+        <h4>PÁGINAS</h4>
+        <a href="home.html">HOME</a>
+        <a href="sobre.html">SOBRE</a>
+        <a href="cardapio.html">CARDÁPIO</a>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <p>&copy; 2025 Burgão 10. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script src="./script.js"></script>
 </body>

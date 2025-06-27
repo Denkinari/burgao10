@@ -7,27 +7,240 @@
   <title>Burgão 10 - Sobre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;700&family=Beth+Ellen&family=Caveat+Brush&family=Dai+Banna+SIL:wght@400;700&family=Passion+One:wght@400;700;900&family=Rethink+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="./css/sobre.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;700&family=Beth+Ellen&family=Caveat+Brush&family=Dai+Banna+SIL:wght@400;700&family=Passion+One:wght@400;700;900&Londrina+Solid:wght@300;500;700&family=Rethink+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sobre.css">
 
 </head>
 
 <body>
   <header class="main-header">
     <div class="logo">
-      <a href="index.html">Burgão <span>10</span></a>
+      <a href="home.html"><img src="./assets/svgs/logo.svg" alt="Logo Burgão 10"></a>
     </div>
     <nav class="nav-links">
-      <a href="index.html">HOME</a>
+      <a href="home.html">HOME</a>
       <a href="sobre.html" class="active">SOBRE</a>
       <a href="cardapio.html">CARDÁPIO</a>
     </nav>
+    <button class="hamburger-menu" id="hamburger-menu">
+      <span class="hamburger-menu__bar"></span>
+      <span class="hamburger-menu__bar"></span>
+      <span class="hamburger-menu__bar"></span>
+    </button>
   </header>
-  <main class="hero-section">
-    <h1>Página Sobre</h1>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Da <span class="highlight">Nossa</span> Família<br>para a <span class="highlight">Sua!</span></h1>
+        <p>Acreditamos que nosso hambúrguer pode ser mais do que um lanche — pode ser acolhedor, afetuoso e cheio de amor. É por isso que cada refeição que servimos é preparada com carinho, da nossa cozinha familiar para a mesa da sua família.</p>
+        <a href="#" class="btn-more">CONHEÇA MAIS <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.41 0.589966L6 5.16997L10.59 0.589966L12 1.99997L6 7.99997L0 1.99997L1.41 0.589966Z" fill="#F98100" />
+          </svg></a>
+      </div>
+      <div class="stats-bar">
+        <div class="container">
+          <div class="stat-item">
+            <span class="stat-number">+97%</span>
+            <span class="stat-desc">DE APROVAÇÃO <br>de feedback dos nossos clientes</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">+20 MIL</span>
+            <span class="stat-desc">REFEIÇÕES <br>Servidas com carinho desde a inauguração</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">+500</span>
+            <span class="stat-desc">PEDIDOS POR SEMANA <br>Famílias que confiam na gente todos os dias</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01. Our Story -->
+    <section class="split-section">
+      <div class="container">
+        <div class="text-content">
+          <span class="section-subtitle">01. NOSSA HISTÓRIA</span>
+          <h2>Origem do Burgão 10</h2>
+          <p>Tudo começou com uma receita de família, uma cozinha pequena e um grande sonho. O que eram refeições de fim de semana com amigos, virou aos poucos o queridinho da comunidade. Hoje, seguimos os mesmos princípios que nos trouxeram até aqui: cozinhar com paixão, tratar todos como família e nunca abrir mão da qualidade.</p>
+        </div>
+        <div class="image-content">
+          <img src="https://i.imgur.com/eB4mYkH.jpeg" alt="Equipe na cozinha do Burgão 10">
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. Our Mission -->
+    <section class="split-section reverse">
+      <div class="container">
+        <div class="image-content">
+          <img src="https://i.imgur.com/WpP8yQ7.jpeg" alt="Chef preparando ingredientes frescos">
+        </div>
+        <div class="text-content">
+          <span class="section-subtitle">02. NOSSA MISSÃO</span>
+          <h2>Comida com Sabor de Lar</h2>
+          <p>Nossa missão é simples: servir refeições de alta qualidade que aproximem as pessoas. Acreditamos no uso de ingredientes frescos, no preparo cuidadoso e em tratar cada cliente como parte da nossa família. Não fazemos apenas fast food — fazemos comida com coração.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. Our Team -->
+    <section class="split-section">
+      <div class="container">
+        <div class="text-content">
+          <span class="section-subtitle">03. NOSSA EQUIPE</span>
+          <h2>Os Rostos por Trás do Sabor</h2>
+          <p>Nossa equipe é o coração do restaurante. Dos cozinheiros aos atendentes, cada membro traz paixão, orgulho e um toque pessoal. Somos mais que colegas — somos uma família servindo a sua.</p>
+        </div>
+        <div class="image-content">
+          <img src="https://i.imgur.com/Bf1oDGI.jpeg" alt="Dois chefs da equipe Burgão 10">
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. Testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <span class="section-subtitle">FEEDBACKS REAIS</span>
+        <h2>O que dizem sobre nós:</h2>
+      </div>
+      <div class="scroller" data-speed="slow">
+        <ul class="scroller__inner">
+          <li>
+            <img src="https://i.imgur.com/yXOvdJ2.jpeg" alt="Avatar de Júlio Amaral">
+            <div class="card-content">
+              <h3>Júlio Amaral</h3>
+              <p>"Entrega rápida, lanche gostoso e barato. Salvou nosso domingo à noite!"</p>
+            </div>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/yXOvdJ2.jpeg" alt="Avatar de Maria Silva">
+            <div class="card-content">
+              <h3>Maria Silva</h3>
+              <p>"O melhor hambúrguer da cidade, sem dúvidas! O pão é macio e a carne no ponto certo."</p>
+            </div>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/yXOvdJ2.jpeg" alt="Avatar de Carlos Pereira">
+            <div class="card-content">
+              <h3>Carlos Pereira</h3>
+              <p>"Atendimento nota 10 e a batata frita é sensacional. Recomendo sempre."</p>
+            </div>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/yXOvdJ2.jpeg" alt="Avatar de Ana Costa">
+            <div class="card-content">
+              <h3>Ana Costa</h3>
+              <p>"Virou nosso lanche oficial de sexta-feira. Adoramos o carinho em cada detalhe."</p>
+            </div>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/yXOvdJ2.jpeg" alt="Avatar de Pedro Souza">
+            <div class="card-content">
+              <h3>Pedro Souza</h3>
+              <p>"Qualidade impressionante. Dá pra sentir que os ingredientes são frescos."</p>
+            </div>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/yXOvdJ2.jpeg" alt="Avatar de Fernanda Lima">
+            <div class="card-content">
+              <h3>Fernanda Lima</h3>
+              <p>"Simplesmente perfeito! O sabor é de comida caseira, mas com um toque gourmet."</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 05. Family Moments -->
+    <section class="moments-section">
+      <div class="container text-center">
+        <span class="section-subtitle">04. O QUE FAMÍLIA SIGNIFICA PARA NÓS</span>
+        <h2>Compartilhar Momentos que Importam</h2>
+        <p>Para nós, comida é conexão. É sentar à mesa, rir, contar histórias e criar memórias. Seja um jantar corrido durante a semana ou um agrado no fim de semana, temos orgulho de fazer parte dos seus momentos — grandes ou pequenos.</p>
+      </div>
+      <div class="full-width-image">
+        <img src="https://i.imgur.com/P1F9M5D.jpeg" alt="Clientes compartilhando momentos no restaurante">
+      </div>
+    </section>
+
+    <!-- 06. Our Journey -->
+    <section class="journey-section">
+      <div class="container text-center">
+        <span class="section-subtitle">05. CRESCENDO JUNTOS</span>
+        <h2>Nossa Jornada</h2>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-year">2019</span>
+            <p>A cozinha da família abre as portas</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2021</span>
+            <p>Primeira loja inaugurada na cidade natal</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2025</span>
+            <p>Em breve...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. Join Us -->
+    <section class="join-us-section">
+      <div class="container text-center">
+        <span class="section-subtitle">06. VISITE NOSSA LOJA MAIS PRÓXIMA</span>
+        <h2>Junte-se à Família</h2>
+        <p>Temos orgulho de servir famílias como a sua todos os dias. Venha nos visitar, sinta a diferença e descubra por que nossa comida tem sabor de lar.</p>
+      </div>
+      <div class="full-width-image">
+        <img src="https://i.imgur.com/xT7E1jD.jpeg" alt="Interior do restaurante Burgão 10, com mesas e cadeiras de madeira">
+      </div>
+    </section>
+
   </main>
-  <script src="script.js"></script>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column footer-logo">
+        <a href="#"><img src="./assets/svgs/logo.svg" alt="Logo Burgão 10"></a>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>CONTATO</h4>
+        <p>+55 61 98608-1010</p>
+        <p>burgao10contato@gmail.com</p>
+        <span class="footer-divisor      gap: 24px;"></span>
+        <p>St. P QNP 19 E - Ceilândia</p>
+        <p>Brasília - DF, 72241-803</p>
+        <span class="footer-divisor"></span>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/burgao10oficial/" aria-label="Instagram">
+            <img src="./assets/svgs/social-media/isntagram.svg" alt="Logo Instagram">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="./assets/svgs/social-media/facebook.svg" alt="Logo Facebook">
+          </a>
+          <a href="https://wa.me/+556186081010" aria-label="Whatsapp">
+            <img src="./assets/svgs/social-media/whatsapp.svg" alt="Logo Whatsapp">
+          </a>
+        </div>
+      </div>
+      <div class="footer-column footer-pages">
+        <h4>PÁGINAS</h4>
+        <a href="home.html">HOME</a>
+        <a href="sobre.html">SOBRE</a>
+        <a href="cardapio.html">CARDÁPIO</a>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <p>&copy; 2025 Burgão 10. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
 </body>
 
 </html>

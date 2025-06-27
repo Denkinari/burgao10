@@ -327,11 +327,27 @@
   background-color: var(--primary-color);
   position: relative;
   /* Pattern de fundo */
-  background-image: url('assets/hamburguer-pattern.png');
   background-blend-mode: overlay;
   background-size: 150px;
   background-position: center;
+  padding: 120px 0;
+
 }
+
+.cta-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/hamburguer-pattern.png');
+  filter: opacity(6%);
+  background-size: contain;
+
+}
+
+
 .cta-section::before { /* Camada preta diagonal */
   content: '';
   position: absolute;
@@ -341,6 +357,7 @@
   height: 100%;
   background-color: var(--bg-dark);
   clip-path: polygon(0 0, 100% 0, 100% 20%, 0 70%);
+  z-index: 1;
 }
 .cta-container {
   position: relative;
@@ -353,43 +370,63 @@
 }
 .cta-title {
   font-family: var(--font-title-1);
+  color: var(--text-light-2);
   font-size: 2rem;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.cta-subtitle { margin-bottom: 20px; }
+.cta-subtitle { 
+  margin-bottom: 20px; 
+  font-family: var(--font-text-1);
+  color: var(--text-dark-2);
+  margin-bottom: 32px;
+}
+
 .cta-button {
   display: inline-block;
   background-color: var(--primary-color);
-  color: var(--bg-dark);
+  font-family: var(--font-text-2);
+  color: var(--text-light-2);
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
 }
-.cta-button:hover { background-color: var(--secondary-color); }
-.cta-image-content {
-  background-image: url(https://i.imgur.com/Kxrb8Yx.png); /* Imagem de placeholder */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  width: 300px;
-  height: 300px;
-  position: relative;
+.cta-button:hover { 
+  background-color: var(--secondary-color); 
 }
+
 .cta-price-badge {
   position: absolute;
   bottom: 20px;
   right: 0px;
-  background-color: var(--primary-color);
-  color: var(--bg-dark);
+  color: var(--text-light-2);
+  font-family:  var(--font-text-1);
   padding: 15px;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   text-align: center;
 }
-.cta-price-badge p { font-size: 0.8rem; }
-.cta-price-badge span { font-family: var(--font-title-1); font-size: 1.8rem; line-height: 1; }
+
+.cta-price-badge::before {
+  content: '';
+  width: 20px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background-image: url('../assets/svgs/discount-black.svg');
+}
+
+.cta-price-badge p { 
+  font-size: 0.8rem; 
+}
+
+.cta-price-badge span { 
+  font-family: var(--font-title-1); 
+  font-size: 1.8rem; line-height: 1; 
+}
 
 /* ===== SEÇÃO 6: MAPA E RODAPÉ ===== */
 .location-section {
@@ -399,70 +436,52 @@
 .map-container {
   background-color: var(--bg-light);
   padding: 10px;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+
 }
-.map-container iframe {
+
+.map-container::before {
+  content: "";
+  position: absolute;
   width: 100%;
-  height: 300px;
-  border-radius: 5px;
+  height: 50%;
+  background-color: var(--bg-dark);
+  z-index: -999;
+  bottom: 0;
+}
+
+.map-container iframe {
+  width: 80%;
+  height: 700px;
+  padding: 64px;
+  border-radius: 75px;
 }
 .location-text-container {
   text-align: center;
-  color: var(--text-light);
+  font-variant: var(--font-text-3);
+  font-weight: 500;
+  color: var(--text-light-1);
+  font-size: 1.5rem;
   padding: 30px 0;
 }
-.location-text-container span { color: var(--primary-color); font-weight: bold; }
 
-.main-footer {
-  background-color: #0a0a0a;
-  padding: 50px 0 0 0;
-  color: #ccc;
-  font-size: 0.9rem;
+.location-text-adress {
+font-size: 1rem;
+font-family: var(--font-text-2);
+color: var(--text-dark-2);
+margin-bottom: 16px;
+margin-top: 6px;
+
 }
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
+
+.location-text-delivery-info {
+font-size: 2rem;
 }
-.footer-column h4 {
-  font-family: var(--font-title-1);
-  color: var(--text-light);
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-.footer-logo a {
-  font-family: var(--font-logo);
-  font-size: 2.5rem;
-  color: var(--text-light);
-  text-decoration: none;
-}
-.footer-contact p, .footer-pages a {
-  color: #ccc;
-  text-decoration: none;
-  line-height: 1.8;
-}
-.footer-pages a {
-  display: block;
-  transition: color 0.3s;
-}
-.footer-pages a:hover { color: var(--primary-color); }
-.footer-socials {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 15px;
-}
-.footer-socials a { color: var(--text-light); transition: color 0.3s; }
-.footer-socials a:hover { color: var(--primary-color); }
-.footer-bottom-bar {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 1px solid #333;
-  font-size: 0.8rem;
+.location-text-container span { 
+  color: var(--primary-color); 
 }
 
 /* ============================================== */
@@ -534,7 +553,6 @@
   .gallery-card.active .gallery-card__content {
     transform: translateY(0);
   }
-
 }
 
 
@@ -554,6 +572,7 @@
   .hamburger-menu { 
     display: none;
   }
+  
   .nav-links {
       position: static;
       flex-direction: row;
@@ -614,11 +633,4 @@
   }
   .cta-price-badge { right: 20px; }
 
-  /* === RODAPÉ === */
-  .footer-container {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-  }
-  .footer-socials { justify-content: flex-start; }
 }
